@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="312" viewBox="0 0 1200 312" role="img" aria-labelledby="title description">
+  <title id="title">LOCALGUARD — Your Local Security Guardian</title>
+  <desc id="description">A neon green checkmark inside a dark, outlined shield beside the LOCALGUARD wordmark.</desc>
+  <defs>
+    <linearGradient id="shield-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#14261e"/>
+      <stop offset="1" stop-color="#080f0c"/>
+    </linearGradient>
+    <linearGradient id="shield-stroke" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#b5ff72"/>
+      <stop offset="1" stop-color="#21d66b"/>
+    </linearGradient>
+    <filter id="soft-glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.91 0 0 0 0 0.42 0 0 0 0.8 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(20 16)">
+    <circle cx="140" cy="140" r="118" fill="none" stroke="#1b3026" stroke-width="1.5"/>
+    <circle cx="140" cy="140" r="106" fill="none" stroke="#234333" stroke-width="1" stroke-dasharray="2 8"/>
+    <path d="M22 104H8V78h25M258 104h14V78h-25M22 177H8v26h25M258 177h14v26h-25" fill="none" stroke="#315440" stroke-width="2"/>
+    <circle cx="33" cy="78" r="3" fill="#52e987"/>
+    <circle cx="247" cy="78" r="3" fill="#52e987"/>
+    <circle cx="33" cy="203" r="3" fill="#52e987"/>
+    <circle cx="247" cy="203" r="3" fill="#52e987"/>
+    <path d="M140 40c28 17 58 24 76 29v58c0 49-30 87-76 108-46-21-76-59-76-108V69c18-5 48-12 76-29Z" fill="url(#shield-fill)" stroke="url(#shield-stroke)" stroke-width="4"/>
+    <path d="M140 57c23 13 45 18 59 22v47c0 38-22 67-59 86-37-19-59-48-59-86V79c14-4 36-9 59-22Z" fill="none" stroke="#3b7653" stroke-width="1.5"/>
+    <path d="m105 127 23 23 48-51" fill="none" stroke="#9aff65" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" filter="url(#soft-glow)"/>
+    <circle cx="140" cy="140" r="3" fill="#eaffd8"/>
+  </g>
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="330" y="146" fill="#f3f7f4" font-size="82" font-weight="750" letter-spacing="3">LOCALGUARD</text>
+    <rect x="334" y="174" width="42" height="3" rx="1.5" fill="#59ec86"/>
+    <text x="390" y="184" fill="#a9b8af" font-size="27" font-weight="450" letter-spacing="1.2">Your Local Security Guardian</text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="360" viewBox="0 0 680 180" role="img" aria-labelledby="title description">
+  <title id="title">LOCALGUARD — Your Local Security Guardian</title>
+  <desc id="description">An animated green shield and checkmark beside the LOCALGUARD wordmark and tagline.</desc>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shield-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="shield-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <style>
+      text { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; }
+      .title { font-weight: 700; }
+      .shield {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: shield-pulse 3.2s ease-in-out infinite;
+      }
+      .title { animation: title-glow 4s ease-in-out infinite; }
+      .glow-wrap { animation: glide-glow 5.5s ease-in-out infinite; }
+      @keyframes shield-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+      }
+      @keyframes title-glow {
+        0%, 100% { opacity: 1; }
+        50% { opacity: .88; }
+      }
+      @keyframes glide-glow {
+        0%, 20% { transform: translateX(0); }
+        45%, 55% { transform: translateX(210px); }
+        80%, 100% { transform: translateX(0); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .shield, .title, .glow-wrap { animation: none; }
+      }
+    </style>
+  </defs>
+  <rect x="8" y="8" width="664" height="164" rx="20" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+  <g transform="translate(48 38)">
+    <g class="shield">
+      <path d="M40 8C40 8 8 22 8 52c0 36 32 66 32 66s32-30 32-66C72 22 40 8 40 8Z" fill="url(#shield-gradient)" stroke="#86efac" stroke-width="2.5" filter="url(#shield-glow)"/>
+      <path d="M40 20C40 20 20 30 20 52c0 26 20 48 20 48s20-22 20-48C60 30 40 20 40 20Z" fill="none" stroke="#bbf7d0" stroke-width="1.8" opacity=".55"/>
+      <path d="m30 58 8 10 16-20" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text class="title" x="150" y="78" fill="#fff" font-size="38" letter-spacing="2.5">LOCALGUARD</text>
+  <text x="150" y="108" fill="#86efac" font-size="16" font-weight="500" letter-spacing="1">Your Local Security Guardian</text>
+  <text x="150" y="134" fill="#94a3b8" font-size="13" font-weight="500" letter-spacing="1.8">Smart · Secure · Reliable</text>
+  <g class="glow-wrap">
+    <rect x="150" y="148" width="170" height="7" rx="3.5" fill="#22c55e" opacity=".9" filter="url(#glow)"/>
+  </g>
+</svg>

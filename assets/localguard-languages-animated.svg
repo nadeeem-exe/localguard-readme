@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="300" viewBox="0 0 620 150" role="img" aria-labelledby="title description">
+  <title id="title">Python, HTML5, and CSS3</title>
+  <desc id="description">Three animated language cards for Python, HTML5, and CSS3.</desc>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    text {
+      font-family: "Segoe UI", Verdana, Arial, sans-serif;
+      font-weight: 700;
+      fill: #fff;
+    }
+    .chip {
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      animation: pulse 6s ease-in-out infinite;
+    }
+    .chip1 { animation-delay: -2s; }
+    .chip2 { animation-delay: 0s; }
+    .chip3 { animation-delay: 2s; }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+    .glow-wrap { animation: glide-glow 6s ease-in-out infinite; }
+    @keyframes glide-glow {
+      0%, 28% { transform: translateX(0); }
+      38%, 61% { transform: translateX(200px); }
+      71%, 94% { transform: translateX(400px); }
+      100% { transform: translateX(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .chip, .glow-wrap { animation: none; }
+    }
+  </style>
+  <g class="glow-wrap">
+    <rect x="20" y="118" width="170" height="8" rx="4" fill="#4ade80" opacity=".9" filter="url(#glow)"/>
+  </g>
+  <g class="chip chip1">
+    <rect x="20" y="20" width="170" height="88" rx="16" fill="#3776ab"/>
+    <circle cx="170" cy="36" r="7" fill="#ffd43b"/>
+    <text x="105" y="72" font-size="24" text-anchor="middle">Python</text>
+  </g>
+  <g class="chip chip2">
+    <rect x="220" y="20" width="170" height="88" rx="16" fill="#e44d26"/>
+    <circle cx="370" cy="36" r="7" fill="#fff"/>
+    <text x="305" y="72" font-size="24" text-anchor="middle">HTML5</text>
+  </g>
+  <g class="chip chip3">
+    <rect x="420" y="20" width="170" height="88" rx="16" fill="#1572b6"/>
+    <circle cx="570" cy="36" r="7" fill="#fff"/>
+    <text x="505" y="72" font-size="24" text-anchor="middle">CSS3</text>
+  </g>
+</svg>

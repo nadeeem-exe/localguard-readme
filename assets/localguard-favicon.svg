@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">LocalGuard</title>
+  <rect width="64" height="64" rx="15" fill="#09120d"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#244432" stroke-width="1.5"/>
+  <path d="M32 9c8 5 15 6 20 8v15c0 13-8 22-20 28-12-6-20-15-20-28V17c5-2 12-3 20-8Z" fill="#12241a" stroke="#62e98d" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="m22 32 7 7 14-15" fill="none" stroke="#a9ff70" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
