@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>LocalGuard logo preview</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        background: #0b1120;
+        color: #e2e8f0;
+      }
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 1.5rem;
+        box-sizing: border-box;
+      }
+      main {
+        width: min(100%, 34rem);
+        padding: 2rem;
+        border: 1px solid #334155;
+        border-radius: 1rem;
+        background: #111827;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      img {
+        display: block;
+        width: min(100%, 20rem);
+        height: auto;
+        margin: 0 auto 1.5rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+      }
+      p {
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+      code {
+        color: #8df4a8;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        img {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="assets/localguard-logo-animated.svg" alt="LOCALGUARD green shield and checkmark with an animated scan line">
+      <h1>LOCALGUARD</h1>
+      <p>Your Local Security Guardian</p>
+      <p>Offline security and metadata checks for your own local files.</p>
+      <p>The SVG animation respects your device's reduced-motion preference.</p>
+      <p>Use <code>assets/localguard-logo.svg</code> in a website, README, or app.</p>
+    </main>
+  </body>
+</html>
